@@ -24,11 +24,13 @@ class facebook extends StatelessWidget {
   // ignore: dead_code, dead_code
   Widget build(BuildContext context) {
     return Scaffold(
+   
       appBar: AppBar(
         title: Text("facebook",
             style: TextStyle(
               color: Colors.blue[900],
               fontSize: 25,
+              fontWeight: FontWeight.bold
             )),
         backgroundColor: Colors.white,
         centerTitle: true,
@@ -41,6 +43,7 @@ class facebook extends StatelessWidget {
           onPressed: () {},
         ),
         actions: [
+
           IconButton(
               icon: Icon(
                 Icons.message,
@@ -57,7 +60,15 @@ class facebook extends StatelessWidget {
             onPressed: () {},
           ),
         ],
+     elevation: 13,
       ),
+    floatingActionButton: FloatingActionButton( 
+      onPressed: () {},
+      child: Icon(Icons.add),
+    ),
+    
+    
+    
     );
   }
 }
