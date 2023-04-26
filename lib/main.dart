@@ -24,14 +24,12 @@ class facebook extends StatelessWidget {
   // ignore: dead_code, dead_code
   Widget build(BuildContext context) {
     return Scaffold(
-   
       appBar: AppBar(
         title: Text("facebook",
             style: TextStyle(
-              color: Colors.blue[900],
-              fontSize: 25,
-              fontWeight: FontWeight.bold
-            )),
+                color: Colors.blue[900],
+                fontSize: 25,
+                fontWeight: FontWeight.bold)),
         backgroundColor: Colors.white,
         centerTitle: true,
         leading: IconButton(
@@ -43,7 +41,6 @@ class facebook extends StatelessWidget {
           onPressed: () {},
         ),
         actions: [
-
           IconButton(
               icon: Icon(
                 Icons.message,
@@ -60,15 +57,102 @@ class facebook extends StatelessWidget {
             onPressed: () {},
           ),
         ],
-     elevation: 13,
+        elevation: 13,
       ),
-    floatingActionButton: FloatingActionButton( 
-      onPressed: () {},
-      child: Icon(Icons.add),
-    ),
-    
-    
-    
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(Icons.add),
+      ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Container(
+              child: Text(
+                " Bedo",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 30,
+                  height: 1.6,
+                  fontWeight: FontWeight.w700,
+                ),
+                textDirection: TextDirection.ltr,
+              ),
+              height: 200,
+              width: 250,
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                color: Colors.blueGrey,
+              ),
+            ),
+            SizedBox(height: 150),
+            Container(
+              child: Text(
+                " Bedo",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 30,
+                  height: 1.6,
+                  fontWeight: FontWeight.w700,
+                ),
+                textDirection: TextDirection.ltr,
+              ),
+              height: 122,
+              width: 122,
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                color: Colors.blueGrey,
+                shape: BoxShape.circle,
+              ),
+            ),
+            SizedBox(height: 150),
+            Container(
+              child: Text(
+                " Bedo",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 30,
+                  height: 1.6,
+                  fontWeight: FontWeight.w700,
+                ),
+                textDirection: TextDirection.ltr,
+              ),
+              height: 122,
+              width: 122,
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                color: Colors.blueGrey,
+                shape: BoxShape.circle,
+              ),
+            ),
+            SizedBox(height: 150),
+            Container(
+              child: Icon(
+                Icons.favorite,
+                size: 50,
+                color: Colors.red,
+              ),
+              height: 122,
+              width: 122,
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                color: Colors.blueGrey,
+                shape: BoxShape.circle,
+              ),
+            ),
+          ],
+          crossAxisAlignment: CrossAxisAlignment.center,
+        ),
+      ),
     );
   }
 }
+
+
+
+
+
+
+
+
+// letterSpacing → double
+// wordSpacing → double
