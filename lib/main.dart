@@ -64,11 +64,119 @@ class facebook extends StatelessWidget {
         child: Icon(Icons.add),
       ),
       body: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
         child: Column(
           children: [
             Container(
+              margin: EdgeInsets.only(bottom: 100),
               child: Text(
-                " Bedo",
+                " C4a.shop",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 30,
+                  height: 1.6,
+                  fontWeight: FontWeight.w700,
+                ),
+                textAlign: TextAlign.center,
+                textDirection: TextDirection.ltr,
+              ),
+              height: 280,
+              width: double.infinity,
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(15),
+                color: Colors.blueGrey,
+              ),
+            ),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  Container(
+                    margin: EdgeInsets.only(right: 25),
+                    child: Text(
+                      "Abdelzaher",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 30,
+                        height: 1.6,
+                        fontWeight: FontWeight.w700,
+                      ),
+                      textAlign: TextAlign.center,
+                      textDirection: TextDirection.ltr,
+                    ),
+                    height: 120,
+                    width: 160,
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                        color: Colors.blueGrey,
+                        borderRadius: BorderRadius.circular(15)),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(right: 25),
+                    child: Text(
+                      "Mohamed",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 30,
+                        height: 1.6,
+                        fontWeight: FontWeight.w700,
+                      ),
+                      textAlign: TextAlign.center,
+                      textDirection: TextDirection.ltr,
+                    ),
+                    height: 120,
+                    width: 160,
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                        color: Colors.blueGrey,
+                        borderRadius: BorderRadius.circular(15)),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(right: 25),
+                    child: Text(
+                      "Abdelzaher",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 30,
+                        height: 1.6,
+                        fontWeight: FontWeight.w700,
+                      ),
+                      textAlign: TextAlign.center,
+                      textDirection: TextDirection.ltr,
+                    ),
+                    height: 120,
+                    width: 160,
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                        color: Colors.blueGrey,
+                        borderRadius: BorderRadius.circular(15)),
+                  ),
+                  Container(
+                      child: Text(
+                        "Hendawi",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 30,
+                          height: 1.6,
+                          fontWeight: FontWeight.w700,
+                        ),
+                        textAlign: TextAlign.center,
+                        textDirection: TextDirection.ltr,
+                      ),
+                      height: 120,
+                      width: 160,
+                      alignment: Alignment.center,
+                      decoration: BoxDecoration(
+                          color: Colors.blueGrey,
+                          borderRadius: BorderRadius.circular(15))),
+                ],
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(top: 100),
+              child: Text(
+                " C4a.shop",
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 30,
@@ -77,70 +185,14 @@ class facebook extends StatelessWidget {
                 ),
                 textDirection: TextDirection.ltr,
               ),
-              height: 200,
-              width: 250,
-              alignment: Alignment.center,
+              height: 300,
+              width: double.infinity,
+              alignment: Alignment.bottomCenter,
               decoration: BoxDecoration(
-                color: Colors.blueGrey,
-              ),
-            ),
-            SizedBox(height: 150),
-            Container(
-              child: Text(
-                " Bedo",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 30,
-                  height: 1.6,
-                  fontWeight: FontWeight.w700,
-                ),
-                textDirection: TextDirection.ltr,
-              ),
-              height: 122,
-              width: 122,
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                color: Colors.blueGrey,
-                shape: BoxShape.circle,
-              ),
-            ),
-            SizedBox(height: 150),
-            Container(
-              child: Text(
-                " Bedo",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 30,
-                  height: 1.6,
-                  fontWeight: FontWeight.w700,
-                ),
-                textDirection: TextDirection.ltr,
-              ),
-              height: 122,
-              width: 122,
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                color: Colors.blueGrey,
-                shape: BoxShape.circle,
-              ),
-            ),
-            SizedBox(height: 150),
-            Container(
-              child: Icon(
-                Icons.favorite,
-                size: 50,
-                color: Colors.red,
-              ),
-              height: 122,
-              width: 122,
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                color: Colors.blueGrey,
-                shape: BoxShape.circle,
-              ),
+                  color: Colors.blueGrey,
+                  borderRadius: BorderRadius.circular(15)),
             ),
           ],
-          crossAxisAlignment: CrossAxisAlignment.center,
         ),
       ),
     );
